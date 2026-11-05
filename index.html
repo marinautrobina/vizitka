@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#292a2e">
-  <meta name="description" content="Марина Утробина — эксперт по недвижимости. Загородные дома, участки и ИЖС, новостройки, ипотека, инвестиции и сопровождение сделок. Екатеринбург и Свердловская область.">
-  <meta property="og:title" content="Марина Утробина — эксперт по недвижимости">
+  <meta name="description" content="Марина Утробина — стратег в недвижимости. Загородные дома, участки и ИЖС, новостройки, ипотека, инвестиции и сопровождение сделок. Екатеринбург, Урал, сделки по всей России.">
+  <meta property="og:title" content="Марина Утробина — стратег в недвижимости">
   <meta property="og:description" content="ИнвестПространство. Загородная недвижимость, новостройки, сделки. Контакты и бесплатная диагностика рисков покупки недвижимости.">
   <meta property="og:type" content="website">
   <title>Марина Утробина · Электронная визитка</title>
@@ -77,11 +77,13 @@
     .choice:hover{border-color:#b18c52;background:#fbf6ed}
     .choice[aria-pressed="true"]{border:2px solid #af7d33;padding:16px 10px;background:#f3e9d8}
     .choice-symbol{color:#a47b3c;font:400 24px var(--serif);display:block;margin-bottom:4px}
-    .response{border-radius:13px;background:#f4efe6;border:1px solid #e3d4c2;padding:22px 24px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:22px}
+    .response{border-radius:13px;background:#f4efe6;border:1px solid #e3d4c2;padding:22px 24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,365px);align-items:center;gap:22px}
     .response h3{margin:0 0 6px;font-size:18px}
     .response p{margin:0 0 11px;font-size:13px;color:#675f56;line-height:1.65}
     .response-preview{font-size:12px;color:#6c5735;line-height:1.6}
-    .response-actions{display:flex;flex-direction:column;gap:9px;min-width:200px}
+    .response-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;min-width:0}
+    .response-actions .button{padding:12px 7px;font-size:12px;white-space:normal;min-height:52px;line-height:1.3}
+    .message-tip{grid-column:1/-1;text-align:center;color:#786c60;font-size:11px;line-height:1.45;margin:2px 0 0}
     .check-section{background:#fbf9f5}
     .check-card{background:linear-gradient(115deg,var(--dark) 0%,var(--deep) 100%);border:1px solid rgba(196,157,91,.48);color:#fffaf0;border-radius:20px;padding:39px 41px;display:grid;grid-template-columns:1.12fr .88fr;gap:25px;align-items:center;position:relative;overflow:hidden}
     .check-card:after{content:'';position:absolute;width:450px;height:450px;border:1px solid rgba(219,179,111,.18);border-radius:50%;top:-270px;right:-190px;pointer-events:none}
@@ -114,7 +116,7 @@
       .navlinks a:not(:last-child){display:none}.hero{grid-template-columns:1fr}.hero-photo{height:auto}.hero-photo img{width:100%;height:auto;object-fit:contain}
       .hero-content{padding:43px 19px 56px}.hero h1{font-size:clamp(56px,12vw,80px)}.hero-shell:after{width:270px;height:270px}
       .philosophy-layout,.check-card{grid-template-columns:1fr;gap:25px}.check-list{border:0;border-top:1px solid rgba(240,213,154,.36);padding:13px 0 0}
-      .response{grid-template-columns:1fr;gap:12px}.response-actions{flex-direction:row;min-width:0;flex-wrap:wrap}
+      .response{grid-template-columns:1fr;gap:12px}.response-actions{grid-template-columns:repeat(2,minmax(0,1fr));min-width:0}
       .section{padding:60px 0}
     }
     @media(max-width:510px){
@@ -124,7 +126,7 @@
       .hero-actions{display:grid;grid-template-columns:1fr}.button{width:100%}
       .service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.service{padding:22px 12px;min-height:200px}.service h3{font-size:14px}.service p{font-size:11px}
       .choice-grid{grid-template-columns:repeat(2,1fr)}.selector{padding:18px 14px}.choice{font-size:12px;padding:12px 8px;min-height:92px}.choice[aria-pressed="true"]{padding:11px 7px}
-      .response{padding:17px}.response-actions{flex-direction:column}.check-card{padding:26px 23px}.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.contact{padding:15px 8px;min-height:93px}.contact strong{font-size:13px}
+      .response{padding:17px}.response-actions .button{font-size:12px;padding:12px 6px}.check-card{padding:26px 23px}.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.contact{padding:15px 8px;min-height:93px}.contact strong{font-size:13px}
       .footer-row{display:block;text-align:center}.footer-row>*{display:block;margin:6px 0}
     }
     @media(max-width:350px){.service-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}}
@@ -134,7 +136,7 @@
 <body>
   <header class="topbar">
     <nav class="wrapper nav" aria-label="Навигация по визитке">
-      <a href="#top" class="identity"><span class="mark" aria-hidden="true">МУ</span><span class="identity-text">МАРИНА УТРОБИНА<small>ИНВЕСТПРОСТРАНСТВО</small></span></a>
+      <a href="#top" class="identity"><span class="mark" aria-hidden="true">УМ</span><span class="identity-text">МАРИНА УТРОБИНА<small>ИНВЕСТПРОСТРАНСТВО</small></span></a>
       <div class="navlinks"><a href="#services">Направления</a><a href="#diagnostics">Проверка рисков</a><a href="#contacts">Связаться ↗</a></div>
     </nav>
   </header>
@@ -143,8 +145,8 @@
     <div class="hero-content">
       <div class="eyebrow">Личный эксперт · ИнвестПространство</div>
       <h1>Марина<br>Утробина</h1>
-      <p class="role">Эксперт по недвижимости · Загородные дома, квартиры, и новые возможности</p>
-      <div class="geo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Екатеринбург и Свердловская область</div>
+      <p class="role">Стратег в недвижимости · Загородные дома, квартиры и новые возможности</p>
+      <div class="geo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Екатеринбург · Урал · Сделки по всей России</div>
       <div class="gold-rule"></div>
       <p class="pitch">Помогаю с покупкой и продажей недвижимости: загородные дома, участки и ИЖС, новостройки, ипотека и инвестиционные решения.</p>
       <div class="hero-actions">
@@ -178,8 +180,11 @@
       </div><div class="response" aria-live="polite"><div>
         <h3 id="choice-title">Начнём с того, какой дом вам действительно нужен</h3><p id="choice-description">Разберём образ жизни семьи, бюджет, локацию и последовательность действий до покупки участка или начала строительства.</p><div class="response-preview" id="choice-preview">«Здравствуйте, Марина! Хочу разобраться, с чего начать путь к своему дому.»</div>
       </div><div class="response-actions">
+        <a class="button slate-button" id="choice-tg" target="_blank" rel="noopener noreferrer" href="https://t.me/MarinaUtrobina_Realtor">Написать в Telegram ↗</a>
+        <a class="button slate-button" id="choice-max" target="_blank" rel="noopener noreferrer" href="https://max.ru/u/f9LHodD0cOKrNUSFA4MYgNDGRtgfjBiRPP_Ccs4-j1wNu-8o9KubDN5BEiM">Написать в MAX ↗</a>
         <a class="button slate-button" id="choice-wa" target="_blank" rel="noopener noreferrer" href="https://wa.me/79222066292">Написать в WhatsApp ↗</a>
         <button class="button subtle-button" type="button" id="copy-message">Скопировать текст</button>
+        <p class="message-tip">Для Telegram и MAX скопируйте готовый текст и вставьте его в чат.</p>
       </div></div></div>
     </div></section>
     <section id="diagnostics" class="section check-section"><div class="wrapper"><div class="check-card"><div>
@@ -210,7 +215,7 @@
       const toastEl=document.getElementById('toast');let toastTimer;
       function toast(text){clearTimeout(toastTimer);toastEl.textContent=text;toastEl.classList.add('show');toastTimer=setTimeout(()=>toastEl.classList.remove('show'),3500)}
       function saveContact(){
-        const lines=['BEGIN:VCARD','VERSION:3.0','N;CHARSET=UTF-8:Утробина;Марина;;;','FN;CHARSET=UTF-8:Марина Утробина','ORG;CHARSET=UTF-8:ИнвестПространство','TITLE;CHARSET=UTF-8:Эксперт по недвижимости','TEL;TYPE=CELL:+79222066292','URL:https://t.me/MarinaUtrobina_Realtor','NOTE;CHARSET=UTF-8:Загородная недвижимость, участки и ИЖС, новостройки, ипотека, инвестиции.','END:VCARD'];
+        const lines=['BEGIN:VCARD','VERSION:3.0','N;CHARSET=UTF-8:Утробина;Марина;;;','FN;CHARSET=UTF-8:Марина Утробина','ORG;CHARSET=UTF-8:ИнвестПространство','TITLE;CHARSET=UTF-8:Стратег в недвижимости','TEL;TYPE=CELL:+79222066292','URL:https://t.me/MarinaUtrobina_Realtor','NOTE;CHARSET=UTF-8:Загородная недвижимость, участки и ИЖС, новостройки, ипотека, инвестиции.','END:VCARD'];
         const blob=new Blob(['\ufeff'+lines.join('\r\n')],{type:'text/vcard;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='Marina_Utrobina.vcf';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);toast('Контакт скачан. Откройте файл, чтобы добавить его в адресную книгу.')
       }
       document.getElementById('save-contact-hero').addEventListener('click',saveContact);
